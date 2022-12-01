@@ -1,0 +1,77 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.0.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    async (1.30.3)
+      console (~> 1.10)
+      nio4r (~> 2.3)
+      timers (~> 4.1)
+    async-io (1.34.0)
+      async
+    async-websocket (0.8.0)
+      async-io
+      websocket-driver (~> 0.7.0)
+    celluloid (0.18.0)
+      timers (~> 4)
+    celluloid-io (0.17.3)
+      celluloid (>= 0.17.2)
+      nio4r (>= 1.1)
+      timers (>= 4.1.1)
+    concurrent-ruby (1.1.10)
+    console (1.16.2)
+      fiber-local
+    dotenv (2.8.1)
+    faraday (2.7.1)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-mashify (0.1.1)
+      faraday (~> 2.0)
+      hashie
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (3.0.2)
+    fiber-local (1.0.0)
+    gli (2.21.0)
+    hashie (5.0.0)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.16.3)
+    multipart-post (2.2.3)
+    nio4r (2.5.8)
+    puma (6.0.0)
+      nio4r (~> 2.0)
+    ruby2_keywords (0.0.5)
+    slack-ruby-bot (0.16.1)
+      activesupport
+      hashie
+      slack-ruby-client (>= 0.14.0)
+    slack-ruby-client (2.0.0)
+      faraday (>= 2.0)
+      faraday-mashify
+      faraday-multipart
+      gli
+      hashie
+      websocket-driver
+    timers (4.3.5)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+    websocket-driver (0.7.5)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  async-websocket (~> 0.8.0)
+  celluloid-io
+  dotenv
+  puma
+  slack-ruby-bot
+
+BUNDLED WITH
+   2.3.10
