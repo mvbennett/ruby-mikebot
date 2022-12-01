@@ -4,6 +4,10 @@ module Mikebot
       command 'say_hi' do |client, data, _match|
         client.say(channel: data.channel, text: HiText.say_hi)
       end
+
+      command /\w*\scoffee\s\w*/i do |client, data, _match|
+        client.say(channel: data.channel, text: "I'm drinking Haiti coffee from Panther coffee.")
+      end
     end
   end
 end
